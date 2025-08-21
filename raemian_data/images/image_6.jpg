@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="euc-kr" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=1440,initial-scale=1.0" />
+<meta name="Generator" content="삼성물산" />
+<meta name="Author" content="래미안" />
+<meta name="Keywords" content="삼성,래미안,물산" />
+<meta name="Description" content="삼성물산 래미안 입니다." />
+<title>EXPERIENCE of PRIDE  - EXPERIENCE of PRIDE 래미안</title>
+<link rel="stylesheet" href="/assets/front/inc/css/base.css" />
+<link rel="stylesheet" href="/assets/front/inc/css/etc.css" />
+</head>
+<body>
+	<div class="system_error">
+		<div class="se_message">
+			<h1><img src="/assets/front/inc/images/layout/logo_h.png" alt="래미안" /></h1>
+			<h2>시스템 점검중 입니다.</h2>
+			<p class="content">
+				이용에 불편을 드려 죄송합니다.<br />
+				서비스 이용에 불편을 드린 점 양해 드리며, 보다 나은 서비스로 보답하겠습니다.
+			</p>
+			<div class="btn_home">
+				<a href="/main.do">래미안 홈 바로가기</a>
+			</div>
+		</div>
+		<div class="se_visual">
+			<img src="/assets/front/inc/images/etc/photo_system_error.png" alt="" />
+		</div>
+	</div>
+	<script>
+		//윈도우 로드시 body 투명도 변경 및 배경색상 변경
+		window.onload = function() {
+			document.getElementsByTagName("body")[0].style.opacity = 1;
+			document.getElementsByTagName("body")[0].style.backgroundColor = "#F2F2F2";
+		}
+	</script>
+</body>
+</html>
