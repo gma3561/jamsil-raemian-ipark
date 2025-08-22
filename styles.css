@@ -42,7 +42,11 @@ body {
     align-items: center;
     height: 100%;
     padding: 15px 0;
-    text-decoration: none;
+    text-decoration: none !important;
+}
+
+.logo:hover {
+    text-decoration: none !important;
 }
 
 .logo-img { 
