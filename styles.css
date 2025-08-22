@@ -42,6 +42,7 @@ body {
     align-items: center;
     height: 100%;
     padding: 15px 0;
+    text-decoration: none;
 }
 
 .logo-img { 
@@ -52,11 +53,12 @@ body {
 }
 
 .logo-text {
-    font-size: 20px;
-    font-weight: 600;
-    color: #185d6a;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0a3d47;
     letter-spacing: -0.5px;
     white-space: nowrap;
+    text-decoration: none;
 }
 
 .nav {
@@ -417,7 +419,7 @@ body {
         display: none;
     }
     .logo-img { height: 20px; }
-    .logo-text { font-size: 16px; }
+    .logo-text { font-size: 18px; }
     
     .hero-title {
         font-size: 36px;
@@ -974,7 +976,7 @@ body {
     }
     
     .logo-text {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .phone-btn {
