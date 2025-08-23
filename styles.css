@@ -679,10 +679,11 @@ body {
 }
 
 .footer-logo {
-    max-height: 40px;
+    max-height: 50px;
     width: auto;
     display: block;
     object-fit: contain;
+    margin-bottom: 20px;
 }
 
 .footer-social {
