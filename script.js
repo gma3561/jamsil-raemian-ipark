@@ -56,13 +56,19 @@ document.querySelectorAll('.js-open-channel').forEach(el => {
 // Header scroll effect
 let lastScroll = 0;
 window.addEventListener('scroll', function() {
-    const header = document.querySelector('.header');
+    const header = document.querySelector('.luxury-header');
     const currentScroll = window.pageYOffset;
     
-    if (currentScroll > 100) {
-        header.style.background = 'rgba(0, 0, 0, 0.95)';
-    } else {
-        header.style.background = '#000';
+    if (header) {
+        if (currentScroll > 100) {
+            header.style.background = 'rgba(0, 0, 0, 0.98)';
+            header.style.backdropFilter = 'blur(30px)';
+            header.style.borderBottom = '1px solid rgba(255, 255, 255, 0.15)';
+        } else {
+            header.style.background = 'rgba(0, 0, 0, 0.85)';
+            header.style.backdropFilter = 'blur(20px)';
+            header.style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)';
+        }
     }
     
     lastScroll = currentScroll;
@@ -98,7 +104,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Tab switching functionality
 document.addEventListener('DOMContentLoaded', function() {
-    const tabItems = document.querySelectorAll('.tab-item');
+    // Support both old and new navigation classes
+    const tabItems = document.querySelectorAll('.tab-item, .nav-item');
     const tabPanes = document.querySelectorAll('.tab-pane');
     
     console.log('Tab items found:', tabItems.length);
