@@ -58,12 +58,12 @@
                     <p class="hero-subtitle fade-in-up">래미안 아이파크가 펼치는 잠실의 새로운 미래</p>
                     <h1 class="hero-title fade-in-up">잠실 래미안 아이파크</h1>
                     <div class="hero-buttons fade-in-up">
-                        <a href="#" class="hero-btn js-open-channel">
+                        <a href="#" class="hero-btn" data-form-type="inquiry">
                             <span class="btn-text">관심고객<br>등록하기</span>
                             <span class="arrow">»</span>
                             <span class="btn-bg"></span>
                         </a>
-                        <a href="#" class="hero-btn js-open-channel">
+                        <a href="#" class="hero-btn" data-form-type="property">
                             <span class="btn-text">매물정보<br>등록하기</span>
                             <span class="arrow">»</span>
                             <span class="btn-bg"></span>
@@ -269,6 +269,46 @@
         try { console.warn('ChannelTalk pluginKey가 설정되지 않았습니다. window.CHANNEL_PLUGIN_KEY에 값을 지정하세요.'); } catch (e) {}
       }
     </script>
+
+    <!-- Form Modal -->
+    <div id="formModal" class="form-modal">
+        <div class="form-modal-content">
+            <button class="form-close-btn">&times;</button>
+            <h2 id="formTitle" class="form-title">Contact us</h2>
+            <p id="formDescription" class="form-description"></p>
+            
+            <form id="contactForm" class="contact-form-modal">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="성함 *" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="전화번호 *" required>
+                </div>
+                <div id="inquiryFields" class="conditional-fields">
+                    <div class="form-group">
+                        <select id="dealType" name="dealType">
+                            <option value="">거래형태 선택</option>
+                            <option value="매매">매매</option>
+                            <option value="전세">전세</option>
+                            <option value="월세">월세</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="area" name="area" placeholder="평형">
+                    </div>
+                </div>
+                <div id="propertyFields" class="conditional-fields" style="display: none;">
+                    <div class="form-group">
+                        <input type="text" id="dongho" name="dongho" placeholder="동호수">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="문의사항 (선택사항)" rows="3"></textarea>
+                </div>
+                <button type="submit" class="form-submit-btn">보내기</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
